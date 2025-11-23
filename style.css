@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header{
+  background-color: rgba(31, 27, 27, 0.89);
+  padding: 20px 80px;
+}
+
+
+/* NAV INSIDE HEADER */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+/* LOGO */
+.logo{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo span{
+  color: red;
+}
+
+/* NAV LINKS */
+ul{
+  list-style: none;
+  
+}
+li{
+  display: inline-block;
+  margin-left: 40px;
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+a:hover{
+  color: red;
+}
+main{
+  flex: 1;
+  background-color: rgb(96, 61, 61);
+}
+
+section{
+
+  font-size: 25px; 
+  height: 100vh; /* يجعل كل سيكشن بارتفاع شاشة كاملة */
+  width: 100%;
+  display: flex;
+  align-items: center;  /* يوسّط المحتوى عموديًا */
+  padding: 40px;
+  background-color: white;
+}
+.section-title span {
+    color: red;
+    font-weight: 500;
+}
+#home{
+background-image: url("img/backgr.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.Welcome{
+  color: white;
+  font-size: 40px;
+  padding: 20px 80px;
+}
+.Welcome span{
+  color: red;
+}
+.btw{
+  
+  color: white;
+  font-size: 30px;
+  padding: 20px 80px;
+  border: red 2px solid;
+}
+.btw:hover{
+
+  background-color: red;
+  color: white;
+}
+
+article{
+  background-color: turquoise;
+  margin-top: 20px;
+  font-size: 25px;
+}
+aside{
+  background-color: lightcyan;
+  margin-top: 20px;
+  font-size: 25px;
+}
+footer{
+  background-color: rgba(31, 27, 27, 0.89);
+  padding: 20px 80px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 0 0 0;
+}
+.socials img{
+  width: 34px;
+  height: auto;
+  display: inline-block;
+}
+.about-img{
+  width: 50%;
+  border-radius: 10%;
+  margin-left: 30px;
+  
+
+}
+#me{
+  width: 400px;
+  height: 500px;
+  border-radius: 10%;
+  margin-left: 30px;
+  
+  box-shadow: 15px 15px 15px red;
+
+}
+.about-content{
+  font-size: 25px;
+  padding: 20px 80px;
+  margin-right: 500px;
+
+}
+.about-content span{
+  color: red;
+}
+.about-content h2{
+  font-weight: 100;
+  font-size: 30px;
+}
+.about-content p{
+  font-weight: 50;
+  font-size: 20px;
+}
+.section-title{
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    
+}
+.section-title::after{
+  content: '';
+  display: block;
+  border-bottom: 3px solid red;
+  width: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.cv{
+  color: black;
+  border: red 2px solid;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.cv:hover{
+  background-color: red;
+  color: black;
+}
+.info-item{
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+
+}
+#contact-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+.contact-boxes {
+    margin-top: 40px;
+    display: block;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    }
+
+.contact-card {
+    width: 280px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.icon {
+    width: 55px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 3px 0;
+}
+#contact-info .section-title {
+width: 100%;
+ 
+}
+.footer-content{
+  max-width: 1170px;
+  margin: auto;
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+.footer-content span{
+  color: red;
+}
+.footer-bottom{
+  padding: 10px 80px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+
+  }
+
+.socials li a img {
+    width: 60px;   /* كبّرنا الأيقونات */
+    height: 60px;
+    transition: 0.3s ease;
+}
+
+.socials li a img:hover {
+    transform: scale(1.15); /* أنيميشن صغير يعطي شكل جميل */
+}
